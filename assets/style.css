@@ -4,14 +4,14 @@
     padding: 0;
   }
 :root {
-  --primaryColor: var(rgb(218, 33, 33));
-  --secondaryColor: var(#111);
+  --main-color: rgb(8, 8, 8);
+  --secondary-color: rgb(245, 240, 240);
 
 }
 
 header {
     padding: 20px 35px;
-    background-color: var(--primaryColor);
+    background-color: var(--main-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,12 +22,12 @@ header {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--primaryColor);
+    color: var(--secondary-color);
   }
   
   header a {
     text-decoration: none;
-    color: var(--primaryColor);
+    color: var(--secondary-color);
   }
   
   header nav {
@@ -45,6 +45,42 @@ header {
   
   header nav ul li a {
     padding: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.55vw;
   }
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+    /* media query for smaller desktop screens and smaller */ 
+    @media screen and (max-width: 980px) {
+      header h1 a { 
+        /* will be applied to any screen smaller than 980 px */
+        
+      }
+      
+    }
+  
+    /* media query for tablets and smaller */
+    @media screen and (max-width: 768px) {
+      header h1 {
+        /* this will be applied to any screen in between 768px and 576pc */
+       
+      }
+    }
+    /* media query for mobile phones and smaller */
+  
+    @media screen and (max-width: 575px) {
+      header h1 {
+        /* this will be applied on any screen smaller than 575px*/ 
+      }
+    }
