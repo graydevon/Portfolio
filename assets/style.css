@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+:root {
+  --primaryColor: var(rgb(218, 33, 33));
+  --secondaryColor: var(#111);
+
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  header h1 {
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primaryColor);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primaryColor);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    text-decoration: underline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+  }
