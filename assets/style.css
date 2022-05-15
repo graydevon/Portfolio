@@ -5,8 +5,8 @@
   }
 :root {
   --main-color: rgb(8, 8, 8);
-  --secondary-color: rgb(245, 240, 240);
-
+  --secondary-color: rgba(211, 211, 211, 0.459);
+  --head-lettering: white
 }
 
 header {
@@ -22,12 +22,12 @@ header {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
-    color: var(--secondary-color);
+    color: var(--head-lettering);
   }
   
   header a {
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--head-lettering);
   }
   
   header nav {
@@ -47,6 +47,46 @@ header {
     padding: 10px 15px;
     font-weight: bold;
     font-size: 1.55vw;
+  }
+ /* end of header section */
+ body{
+   background-color: var(--secondary-color);
+ }
+ 
+ h2 {
+   text-decoration: underline;
+ }
+ 
+ 
+ .aboutme {
+      width: 500px;
+      border:   3px solid black;
+      padding: 30px;
+      margin: 20px;
+      display: flex;
+      float: left;
+      
+   }
+
+   .aboutme h2 {
+    text-align: center;
+   }
+
+   .aboutme p {
+     text-align:center;
+   }
+
+   .work {
+    flex: 1;
+    border: 2px solid black;
+    float:left;
+    margin: 20px;
+   }
+
+  img { 
+    height: 250px;
+    flex: 55 200%;
+    max-width: 100%;
   }
 
 
