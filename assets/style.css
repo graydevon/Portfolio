@@ -53,9 +53,7 @@ header {
    background-color: var(--secondary-color);
  }
  
- h2 {
-   text-decoration: underline;
- }
+ 
  
  
  .aboutme {
@@ -84,11 +82,16 @@ header {
    }
 
   img { 
-    height: 250px;
+    
+    height: 200px;
     flex: 55 200%;
     max-width: 100%;
   }
 
+  .image {
+    width: 300px;
+   
+  }
 
 
 
