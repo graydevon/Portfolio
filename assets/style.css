@@ -78,7 +78,7 @@ header {
       margin: 20px;
       margin-right: 200px;
       display: flex;
-      float: center;
+     
       
    }
 
@@ -100,6 +100,10 @@ header {
    }
     
    /* images */ 
+  
+  .profilepic {
+    height: 400px;
+  }
 
   img { 
     
