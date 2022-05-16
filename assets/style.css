@@ -4,16 +4,20 @@
     padding: 0;
     
   }
+/* root variables */
 
 :root {
   --main-color: rgb(8, 8, 8);
   --secondary-color: rgba(88, 87, 87, 0.459);
-  --head-lettering: white
+  --head-lettering: white;
+  --background-color: rgb(99, 93, 93); 
+  
 }
 
 article {
   padding: 40px;
 }
+/* start header elements */
 
 header {
     padding: 20px 35px;
@@ -21,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+   
   }
   
   header h1 {
@@ -55,6 +60,7 @@ header {
     font-size: 1.55vw;
   }
  /* end of header section */
+
  body{
    background-color: var(--secondary-color);
  }
@@ -64,14 +70,13 @@ header {
   
  }
  
- 
- 
- 
  .aboutme {
-      width: 500px;
-      border:   3px solid black;
+      background-color: var(--background-color);
+      width: 650px;
+      border:   3px solid var(--main-color);
       padding: 30px;
-      margin: 40px;
+      margin: 20px;
+      margin-right: 200px;
       display: flex;
       float: center;
       
@@ -83,17 +88,18 @@ header {
     text-align: center;
    }
 
-   .aboutme p {
-     
-   }
-
    .work {
+     flex-direction: column;
+     background-color: var(--background-color);
      text-decoration: underline;
     flex: 1;
-    border: 2px solid black;
+    border: 3px solid var(--main-color);
     float:left;
     margin: 20px;
+    padding: 20px;
    }
+    
+   /* images */ 
 
   img { 
     
@@ -111,6 +117,19 @@ header {
     height: 50px;
   }
 
+  .contact {
+    float: right;
+    position: relative;
+    bottom: 200px;
+
+  }
+
+ 
+
+  
+    
+
+
 
 
 
@@ -124,7 +143,7 @@ header {
 
     /* media query for smaller desktop screens and smaller */ 
     @media screen and (max-width: 980px) {
-      header h1 a { 
+      header h1 { 
         /* will be applied to any screen smaller than 980 px */
         
       }
